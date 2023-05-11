@@ -301,7 +301,7 @@ function printfoodToBuy() {
     );
   } else {
     html += `
-    <div class="cart__empty">
+    <div class="toBuy__empty">
       <img src="assets/img/empty-cart.png" alt="empty cart">
       <h2>you don't have any order yet</h2>
       <p>You can add items to your cart by clicking on the "+" button on the home.</p>
@@ -362,7 +362,7 @@ contentCartShopItems.addEventListener("click", (m) => {
   printfoodToBuy();
 });
 icontCart.addEventListener("click", () => {
-  contentMenuShop.classList.toggle("contentCartShop__show");
+  contentMenuShop.classList.toggle("contentToBuy__show");
   printfoodToBuy();
 });
 printfood();
